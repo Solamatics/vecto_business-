@@ -1,0 +1,200 @@
+/*
+BODY
+*/
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*
+header
+*/
+h1,
+h2,
+h3 {
+  font-weight: 900;
+}
+
+h4,
+h5,
+h6{
+  font-weight: 100;
+}
+
+/*
+BUTTONS
+*/
+.btn-outline-secondary{
+  background-color: transparent !important;
+  border-color: #011627 !important;
+  color: #011627;
+  border-radius: 0;
+  position: relative;
+}
+
+.btn-outline-secondary::before{
+  content: "";
+  position: absolute;
+  background-color: #00ffff;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.btn-outline-secondary:hover::before{
+  width: 100%;
+}
+
+.btn-secondary{
+  background-color: #011627 !important;
+  border-radius: 0;
+  border-color: #011627 !important;
+}
+
+.btn-secondary:hover{
+  color: #00ffff;
+}
+
+.btn-primary{
+  background-color: #00ffff !important;
+  border-color: #00ffff !important;
+  border-radius: 0;
+  color: #011627 !important;
+}
+
+.btn-primary:hover{
+  background-color: #011627 !important;
+  color: #00ffff !important;
+}
+
+/*
+Home
+*/
+
+.home p {
+  font-weight: normal;
+}
+
+/*
+Navbar
+*/
+
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+
+.nav-link,
+.navbar-brand{
+  color: #011627;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  color: #777;
+}
+
+.navbar-brand{
+  font-size: 1.8rem;
+}
+
+/*
+Call to action
+*/
+
+.call-to-action{
+  background-color: #011627;
+  color: #ffffff;
+}
+
+.heading-line{
+  height: 3px;
+  width: 10%;
+  background: #00ffff;
+}
+
+/*
+Services 
+*/
+
+.services i{
+  font-size: 2rem;
+  color: #00ffff;
+}
+
+.services p{
+  font-weight: normal;
+}
+
+/*
+Portfolio
+*/
+
+.dark{
+  color: #00ffff;
+  background-color: #011627;
+  height: 300px;
+}
+
+.dark i{
+  font-size: 1.3rem;
+  color: #00ffff;
+}
+
+.portfolio .img-fluid{
+  height: 300px;
+  object-fit: cover;
+}
+
+.portfolio .col-lg-3{
+  position: relative;
+}
+
+.filter{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #00ffff;
+  opacity: 0.8;
+} 
+
+/*
+Contact us
+*/
+
+.btn-outline-primary{
+  background-color: #011627;
+  color: #ffffff;
+  border: #00ffff;
+}
+
+.btn-outline-primary:hover{
+  background-color: #00ffff;
+}
+/*
+Footer
+*/
+
+.footer{
+  background-color: #011627;
+  color: #ffffff;
+}
+
+/*
+Responsiveness
+*/
+
+@media(max-width: 900px){
+  .navbar .nav-item{
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+  }
+  .call-to-action .container{
+    width: 100% !important;
+  }
+}
